@@ -5,21 +5,21 @@
 class FractalxCli < Formula
   desc "FractalX CLI — generate a Spring Boot monolith ready for decomposition"
   homepage "https://github.com/fractalx-org/fractalx-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.1/fractalx-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "c19386308113b533734603fed0a50d0bee8b08e8b9887c81aa521d1703046214"
+      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.2/fractalx-cli_0.1.2_darwin_amd64.tar.gz"
+      sha256 "502d9efcd30eac60d49cf24d0bf58e3834ca88dd24b2e8298f4d599b0d64d1d3"
 
       define_method(:install) do
         bin.install "fractalx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.1/fractalx-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "45a4ab69989f37554c6ed4e2a2babe7d31c7654d03acf137dd9695ed73ea4824"
+      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.2/fractalx-cli_0.1.2_darwin_arm64.tar.gz"
+      sha256 "677987a9248782b48b8de409cf325c6c2a75f95feb145ebcc9f38179780cea25"
 
       define_method(:install) do
         bin.install "fractalx"
@@ -29,15 +29,15 @@ class FractalxCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.1/fractalx-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "d051ad005c98eea258c1c5d25112293faafbdfebfbaae2a581638e70dadee48e"
+      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.2/fractalx-cli_0.1.2_linux_amd64.tar.gz"
+      sha256 "c6283820ec351554b82674e30032a3141f52c4d8ada76d8ebecdb736f2259dcc"
       define_method(:install) do
         bin.install "fractalx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.1/fractalx-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "da7dcc6c6b1d8780072491c3c3003d7de67a87fb6564a48a698cea34f7dce491"
+      url "https://github.com/fractalx-org/fractalx-cli/releases/download/v0.1.2/fractalx-cli_0.1.2_linux_arm64.tar.gz"
+      sha256 "a82a0ec889a08dca062a4a6b9f556272de18725762bdf140de674c55a406bcf2"
       define_method(:install) do
         bin.install "fractalx"
       end
